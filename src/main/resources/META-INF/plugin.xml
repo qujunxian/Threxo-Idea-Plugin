@@ -1,0 +1,44 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.qujunxian.Threxo-Idea-Plugin</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Threxo Zip</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor>qjx</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager. -->
+    <description><![CDATA[
+    在项目视图里右键即可完成压缩与解压，交互对齐 Mac 版 Threxo：
+    <ul>
+      <li>右键文件/文件夹 → <b>压缩为 ZIP</b>：在同目录生成 ZIP，默认排除 <code>.DS_Store</code>、<code>__MACOSX</code> 等辅助文件；重名自动追加序号，不覆盖已有压缩包。</li>
+      <li>右键压缩包 → <b>解压到当前目录</b>：解压到压缩包所在目录，同名文件自动改名（<code>a.txt</code> → <code>a_1.txt</code>），绝不覆盖；自动过滤系统辅助文件。</li>
+    </ul>
+    支持解压 ZIP/JAR/WAR/EAR、7Z、TAR、TAR.GZ/TGZ、TAR.BZ2、TAR.XZ、GZ、BZ2、XZ。
+    ]]></description>
+
+    <!-- Product and plugin compatibility requirements. -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="Threxo" displayType="BALLOON"/>
+    </extensions>
+
+    <actions>
+        <action id="Threxo.Compress"
+                class="com.qujunxian.threxoideaplugin.action.CompressAction"
+                text="Compress to ZIP"
+                description="Compress the selected files or folders into a ZIP archive in the same directory">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
+        <action id="Threxo.ExtractHere"
+                class="com.qujunxian.threxoideaplugin.action.ExtractAction"
+                text="Extract Here"
+                description="Extract the archive into its own directory. Existing files are renamed instead of overwritten">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="after" relative-to-action="Threxo.Compress"/>
+        </action>
+    </actions>
+</idea-plugin>
