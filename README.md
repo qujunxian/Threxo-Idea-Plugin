@@ -68,6 +68,10 @@ src/main/resources/
 └── messages/ # 中英文文案
 ```
 
+## 许可证
+
+本项目采用 [MIT](LICENSE) 许可证。
+
 ---
 
 ## English
@@ -86,3 +90,5 @@ Requirements: IntelliJ IDEA 2023.2–2024.2, JDK 17.
 ./gradlew buildPlugin   # build the plugin ZIP
 ./gradlew runIde        # run a sandbox IDE with the plugin
 ```
+
+Licensed under the [MIT License](LICENSE).
