@@ -45,7 +45,7 @@ IntelliJ IDEA 项目视图右键压缩/解压插件，交互对齐 Mac 版 Threx
 ./gradlew buildPlugin
 ```
 
-产物：`build/distributions/Threxo-Idea-Plugin-1.0.0.zip`
+产物：`build/distributions/Threxo-Idea-Plugin-1.0.1.zip`
 
 安装：`Settings → Plugins → ⚙ → Install Plugin from Disk...`，选择上述 ZIP 后重启 IDE。
 
