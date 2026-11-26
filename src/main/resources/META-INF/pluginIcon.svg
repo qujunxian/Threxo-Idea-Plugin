@@ -1,12 +1,29 @@
 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M32.0845 7.94025V4H24.0203V7.9896H16.029V4H7.91553V7.94025H4V36H16.0044V32.0045C16.0058 30.9457 16.4274 29.9308 17.1766 29.1826C17.9258 28.4345 18.9412 28.0143 20 28.0143C21.0588 28.0143 22.0743 28.4345 22.8234 29.1826C23.5726 29.9308 23.9942 30.9457 23.9956 32.0045V36H36V7.94025H32.0845Z"
-          fill="url(#paint0_linear)"/>
-    <defs>
-        <linearGradient id="paint0_linear" x1="2.94192" y1="4.89955" x2="37.7772" y2="39.7345"
-                        gradientUnits="userSpaceOnUse">
-            <stop offset="0.15937" stop-color="#3BEA62"/>
-            <stop offset="0.5404" stop-color="#3C99CC"/>
-            <stop offset="0.93739" stop-color="#6B57FF"/>
-        </linearGradient>
-    </defs>
+  <defs>
+    <linearGradient id="threxoBg" x1="11" y1="5" x2="29" y2="35" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3E5272"/>
+      <stop offset="0.55" stop-color="#293A54"/>
+      <stop offset="1" stop-color="#141E2C"/>
+    </linearGradient>
+    <radialGradient id="threxoGlow" cx="20" cy="7" r="17" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9FB6D6" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#9FB6D6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="threxoCapsule" x1="8" y1="15" x2="32" y2="25" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#C9D5E6"/>
+    </linearGradient>
+    <clipPath id="threxoClip">
+      <rect x="4" y="4" width="32" height="32" rx="7.2"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#threxoClip)">
+    <rect x="4" y="4" width="32" height="32" fill="url(#threxoBg)"/>
+    <rect x="4" y="4" width="32" height="32" fill="url(#threxoGlow)"/>
+  </g>
+  <rect x="4.4" y="4.4" width="31.2" height="31.2" rx="6.9" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="0.8"/>
+  <g transform="rotate(45 20 20)">
+    <rect x="7" y="15.4" width="26" height="9.2" rx="4.6" fill="url(#threxoCapsule)"/>
+    <path d="M12.6 17.8H28.6M11.9 20H29.3M12.6 22.2H28.6" stroke="#16202E" stroke-width="1.35" stroke-linecap="round"/>
+  </g>
 </svg>

@@ -1,0 +1,29 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="threxoBgDark" x1="11" y1="5" x2="29" y2="35" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#52688D"/>
+      <stop offset="0.55" stop-color="#344864"/>
+      <stop offset="1" stop-color="#1C293B"/>
+    </linearGradient>
+    <radialGradient id="threxoGlowDark" cx="20" cy="7" r="17" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C4D6F2" stop-opacity="0.44"/>
+      <stop offset="1" stop-color="#C4D6F2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="threxoCapsuleDark" x1="8" y1="15" x2="32" y2="25" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D9E3F2"/>
+    </linearGradient>
+    <clipPath id="threxoClipDark">
+      <rect x="4" y="4" width="32" height="32" rx="7.2"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#threxoClipDark)">
+    <rect x="4" y="4" width="32" height="32" fill="url(#threxoBgDark)"/>
+    <rect x="4" y="4" width="32" height="32" fill="url(#threxoGlowDark)"/>
+  </g>
+  <rect x="4.4" y="4.4" width="31.2" height="31.2" rx="6.9" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="0.8"/>
+  <g transform="rotate(45 20 20)">
+    <rect x="7" y="15.4" width="26" height="9.2" rx="4.6" fill="url(#threxoCapsuleDark)"/>
+    <path d="M12.6 17.8H28.6M11.9 20H29.3M12.6 22.2H28.6" stroke="#0B1320" stroke-width="1.35" stroke-linecap="round"/>
+  </g>
+</svg>
